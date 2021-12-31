@@ -1,0 +1,75 @@
+.container {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-section {
+    margin: 1em;
+    text-align: center;
+}
+
+.todo-input-section {
+    display: flex;
+    margin-bottom: 1em;
+}
+.todo-input-section .todo-input {
+    flex: 1;
+}
+.todo-input-section .todo-input input {
+    height: 40px;
+    padding-left: 10px;
+ }
+.todo-input-section .todo-buttons {
+    flex: 1;
+}
+.todo-add, .todo-update {
+    margin-left: 1em;
+    width: 5em;
+}
+.todo-update {
+    display: none !important;
+}
+.todos-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 600px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+.todos-list .todo-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 1em;
+}
+.todo-task {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.todo-check, .todo-text, .todo-edit, .todo-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-check {
+    margin-left: 10px;
+    min-width: 2em;
+}
+.todo-delete {
+    min-width: 2em;
+    cursor: pointer;
+    margin-right: 1em;
+}
+.todo-text {
+    justify-content: left;
+    width: 18em;
+}
+
+.disable-task {
+    color: grey !important;
+    text-decoration: line-through;
+}
